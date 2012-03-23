@@ -21,11 +21,25 @@ import java.text.ParsePosition;
 
 /**
  * Lightweight porting of ICU MessageFormat.
+ * Must be thread-safe.
  *
  * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
  * @since Mar 23, 2012
  */
 public final class MessageFormat extends Format {
+
+  public MessageFormat() {
+
+  }
+
+  public MessageFormat(String messagePattern) {
+
+  }
+
+
+  public final void applyPattern(String messagePattern) {
+
+  }
 
   @Override
   public StringBuffer format(final Object obj, final StringBuffer toAppendTo,

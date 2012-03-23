@@ -13,29 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.vsplf.i18n.helpers;
-
-import org.testng.annotations.Test;
-
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.core.IsNull.notNullValue;
+package org.vsplf.i18n;
 
 /**
- * Unit test for {@link MessageFormat}.
+ * Unit test for {@link TranslatorFactory}.
  *
  * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
  * @since Mar 23, 2012
  */
-public class MessageFormatTest {
-
-  @Test
-  public void checkSimpleFormat() {
-    MessageFormat messageFormat = new MessageFormat();
-    messageFormat.applyPattern("Hello {0}");
-    String formatted = messageFormat.format(new String[]{"VSPLF"});
-    assertThat("messageFormat must not be null", messageFormat, notNullValue());
-    assertThat("formatted must be: Hello VSPLF", formatted, equalTo("Hello VSPLF"));
-  }
+public class TranslatorFactoryTest {
 
 }
